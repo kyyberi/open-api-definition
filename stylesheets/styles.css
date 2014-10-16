@@ -264,3 +264,10 @@ footer {
     color:#444;
   }
 }
+
+ul li {
+font-size:1.0em;
+}
+ol li {
+font-size:1.0em;
+}
