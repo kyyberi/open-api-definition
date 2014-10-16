@@ -42,7 +42,7 @@ Jotta rajapinnan voi sanoa olevan avoin, sen täytyy täyttää seuraavat ehdot:
 
 3. testijärjestelmä on ladattavissa vapaasti omaan käyttöön itse asennettavaksi
 
-Avoimen rajapinnan kautta saatavan datan ei tarvitse olla avointa dataa<sup>[5]</sup>. Rajapinta voi olla avoin, vaikka tuotantojärjestelmä olisi kokonaan irti Internetistä ja pääsy siihen vain hyvin rajatulla joukolla. Jos rajapinta on avoin, mutta pääsy datasisältöön on rajoitettu, tarjolla tulee olla avoimesti verkossa käytettävissä oleva testiympäristö
+Avoimen rajapinnan kautta saatavan datan ei tarvitse olla avointa dataa. Rajapinta voi olla avoin, vaikka tuotantojärjestelmä olisi kokonaan irti Internetistä ja pääsy siihen vain hyvin rajatulla joukolla. Jos rajapinta on avoin, mutta pääsy datasisältöön on rajoitettu, tarjolla tulee olla avoimesti verkossa käytettävissä oleva testiympäristö
 
 <pre>Kommentti: Jos järjestelmään on tarjolla avoin rajapinta, se ei tarkoita, että tuotantojärjestelmään tai sen sisältämään tietoon pääsisi kuka vain käsiksi. Esimerkiksi potilastietojärjestelmään voi olla avoin rajapinta, mutta potilastiedot eivät ole avoimia. Avoimen rajapinnan kautta voidaan myös tarjota tiettyä henkilöä koskevia tietoja vain tämän omalla suostumuksella (my data).</pre>
 
