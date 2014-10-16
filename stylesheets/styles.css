@@ -73,7 +73,7 @@ pre {
   border-radius:5px;
   border:1px solid #e5e5e5;
   overflow: auto; 
-  margin-left:30px;
+  margin:30px;
   width; 300px; 
   	white-space: pre-wrap;                 /* CSS3 browsers  */
 	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
