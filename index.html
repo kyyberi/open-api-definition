@@ -1,45 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Avoimen rajapinnan määritelmä by okffi</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <title>Avoimen rajapinnan määritelmä by kyyberi</title>
   </head>
+
   <body>
+    <div id="container">
+      <div class="inner">
 
-      <header>
-        <h1>Avoimen rajapinnan määritelmä</h1>
-        <p>Community governed definition of open API</p>
-      </header>
+        <header>
+          <h1>Avoimen rajapinnan määritelmä</h1>
+          <h2>Community governed definition of open API</h2>
+        </header>
 
-      <div id="banner">
-        <span id="logo"></span>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/kyyberi/open-api-definition/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/kyyberi/open-api-definition/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/kyyberi/open-api-definition" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-        <a href="https://github.com/okffi/open-api-definition" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/okffi/open-api-definition/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/okffi/open-api-definition/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+        <hr>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <p>Version: 0.8</p>
+        <section id="main_content">
+          <p>Version: 0.8</p>
 
 <h1>
 <a name="mik%C3%A4-on-avoin-rajapinta" class="anchor" href="#mik%C3%A4-on-avoin-rajapinta"><span class="octicon octicon-link"></span></a>Mikä on avoin rajapinta?</h1>
@@ -66,49 +58,55 @@
 <li><p>Dokumentoitu: Rajapinta on määritelty ja sen dokumentaatio on verkon kautta avoimesti saatavilla. Järjestelmän sisältämät tiedot, niiden rakenne ja rajapinnat tulee  dokumentoida riittävällä tarkkuudella, jotta rajapinnan käyttöönotto ja  hyödyntäminen on vaivatonta.</p></li>
 <li><p>Käyttöönotettava: Avoin rajapinta on mahdollista ottaa käyttöön ilman ylläpitäjän tai järjestelmätoimittajan toimia myös virka-ajan ulkopuolella. Mahdolliset rekisteröitymiset ovat automaattisia.</p></li>
 <li><p>Testattava: Koekäyttöä varten on tarjolla on vähintään testiaineisto. Testattavuuden voi toteuttaa seuraavilla tavoilla:</p></li>
-</ol><ul>
+</ol>
+
+<ul>
 <li>a) avoin pääsy tuotantojärjestelmään, jota käyttäen palveluun voi integroitua, tai</li>
 <li>b) avoin pääsy testijärjestelmään, API-selaimeen tai konsoliin, jossa on realistista tai autenttista dataa, tai</li>
 <li>c) testijärjestelmä on ladattavissa vapaasti omaan käyttöön itse asennettavaksi</li>
-</ul><p>Avoimen rajapinnan kautta saatava datan ei tarvitse olla avointa dataa. Esimerkiksi potilastietojärjestelmään voi olla avoin rajapinta, mutta potilastiedot eivät ole avoimia. Jos järjestelmään on tarjolla avoin rajapinta, se ei tarkoita, että tuotantojärjestelmään tai sen sisältämään tietoon pääsisi kuka vain käsiksi. Rajapinta voi olla avoin, vaikka tuotantojärjestelmä olisi kokonaan irti internetistä ja pääsy siihen vain hyvin rajatulla joukolla. Tällöin tarjolla pitää kuitenkin olla avoimesti verkossa oleva testiympäristö.</p>
+</ul>
+
+<p>Avoimen rajapinnan kautta saatava datan ei tarvitse olla avointa dataa. Esimerkiksi potilastietojärjestelmään voi olla avoin rajapinta, mutta potilastiedot eivät ole avoimia. Jos järjestelmään on tarjolla avoin rajapinta, se ei tarkoita, että tuotantojärjestelmään tai sen sisältämään tietoon pääsisi kuka vain käsiksi. Rajapinta voi olla avoin, vaikka tuotantojärjestelmä olisi kokonaan irti internetistä ja pääsy siihen vain hyvin rajatulla joukolla. Tällöin tarjolla pitää kuitenkin olla avoimesti verkossa oleva testiympäristö.</p>
 
 <table>
-<tr>
-<td>ESIMERKKI</td>
+    <tr>
+        <td>ESIMERKKI</td>
         <td>SULJETTU</td>
         <td>TILAAJAN HALLITSEMA</td>
         <td>AVOIN</td>
         <td>KOMMENTTI</td>
     </tr>
-<tr>
-<td>Palveluun on rajapinta tarjolla, ja palvelun toimittaja on sitoutunut tarjoamaan sen asiakkaidensa osoittamille kolmansille osapuolille</td>
+    <tr>
+        <td>Palveluun on rajapinta tarjolla, ja palvelun toimittaja on sitoutunut tarjoamaan sen asiakkaidensa osoittamille kolmansille osapuolille</td>
         <td>X</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-<tr>
-<td>Palvelun datarajapintaan pääsee vapaasti käsiksi, se on julkisesti netissä ja esimerkkikoodia löytyy googlella, mutta toiminnalliseen rajapintaan ei ole pääsyä.</td>
+    <tr>
+        <td>Palvelun datarajapintaan pääsee vapaasti käsiksi, se on julkisesti netissä ja esimerkkikoodia löytyy googlella, mutta toiminnalliseen rajapintaan ei ole pääsyä.</td>
         <td></td>
         <td></td>
         <td>X</td>
         <td>Avoin, mutta vain datarajapinnan osalta</td>
     </tr>
-<tr>
-<td>Palveluun on olemassa toiminnallinen rajapinta. Päästäkseen siihen käsiksi täytyy pyytää käyttöavain palvelun tarjoajalta, koska palvelu ei kestäisi vapaan käytön kuormitusta. Käytännössä lupa myönnetään aina.</td>
+    <tr>
+        <td>Palveluun on olemassa toiminnallinen rajapinta. Päästäkseen siihen käsiksi täytyy pyytää käyttöavain palvelun tarjoajalta, koska palvelu ei kestäisi vapaan käytön kuormitusta. Käytännössä lupa myönnetään aina.</td>
         <td>X</td>
         <td></td>
         <td></td>
         <td>Jos palvelusta tarjottaisiin testiversio vapaasti käytettäväksi, se olisi avoin</td>
     </tr>
-<tr>
-<td>Palveluun on rajapinta, jonka määrittelyt ja dokumentaatio ovat vapasti saatavilla. Itse palveluun ei pääse vapaasti käsiksi, koska se sisältää ihmisten henkilötietoja. Palveluntarjoaja pitää kuitenkin yllä testipalvelinta, jossa on esimerkkidataa, ja testipalvelimeen pääsee käsiksi luomalla itselleen tunnuksen palveluntarjoajan järjestelmään.</td>
+    <tr>
+        <td>Palveluun on rajapinta, jonka määrittelyt ja dokumentaatio ovat vapasti saatavilla. Itse palveluun ei pääse vapaasti käsiksi, koska se sisältää ihmisten henkilötietoja. Palveluntarjoaja pitää kuitenkin yllä testipalvelinta, jossa on esimerkkidataa, ja testipalvelimeen pääsee käsiksi luomalla itselleen tunnuksen palveluntarjoajan järjestelmään.</td>
         <td></td>
         <td></td>
         <td>X</td>
         <td></td>
     </tr>
-</table><h1>
+</table>
+
+<h1>
 <a name="liite-1-huomiota-ja-hyvi%C3%A4-k%C3%A4yt%C3%A4nt%C3%B6j%C3%A4" class="anchor" href="#liite-1-huomiota-ja-hyvi%C3%A4-k%C3%A4yt%C3%A4nt%C3%B6j%C3%A4"><span class="octicon octicon-link"></span></a>Liite 1: Huomiota ja hyviä käytäntöjä</h1>
 
 <p>Avoimen rajapinnan määritelmä ottaa kantaa vain siihen, milloin rajapinta on avoin ja milloin ei. Alle on koottu joitakin avoimista rajapinnoista puhuttaessa yleisesti esiin nousevia huomiota liittyen muun muassa rajapintojen hyötyihin, standardointiin yms.</p>
@@ -124,13 +122,15 @@
 <p><strong>Kuormitusrajoitukset:</strong> Avoin rajapinta kannattaa toteuttaa siten, että sitä kuormittamalla ei voi tahattomasti aiheuttaa uhkaa tai haittaa tietojärjestelmän muulle käytölle. Vaikkapa kutsujen määrää per aikayksikkö voi teknisesti rajoittaa. Rajoitustoiminnot saattavat aiheuttaa tarpeita kahdentaa osia tietojärjestelmästä (vrt. Reittiopas)</p>
 
 <p><strong>Muita vastaavia määritelmiä:</strong> Vastaavaa avoimien rajapintojen määritelmää ei ole, mutta sisältöä voi verrata avoimen lähdekoodin määritelmään ja suomennettuun avoimen datan ja avoimen sisällön määritelmään. Englanniksi on olemassa muun muassa The Open API Principles.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/okffi">okffi</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
+        </section>
+
+        <footer>
+          Avoimen rajapinnan määritelmä is maintained by <a href="https://github.com/kyyberi">kyyberi</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
